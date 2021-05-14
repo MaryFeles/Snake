@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 0;
+}
+
+canvas {
+    display: flex;
+
+    border: 5px solid #777;
+    background-color: #0c1315;
+}
+
+.btn {
+    cursor: pointer;
+    outline: none;
+
+    padding: 4px 8px;
+    background-color: #fff777;
+    border: 2px outset #777;
+}
+
+.btn:active {
+    border-style: inset;
+}
+
+.btn:hover {
+    background-color: #fff10d;
+}
+
+.btn:disabled:hover {
+    background-color: #fff777;
+}
+
+
+.score-wrapper,
+.time-wrapper {
+    display: flex;
+}
+
+.label {
+    margin-right: 8px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    z-index: 1000;
+
+    max-width: 410px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+    background-color: #fff;
+    border: 3px ridge #fff10d;
+    color: #000;
+
+    font-size: 14px;
+}
+
+.modal__btn {
+    color: #000;
+    background-color: #b964ff;
+
+    margin-top: 10px;
+}
+
+.modal__btn:hover {
+    background-color: #b964ff;
+}
+
+.cover[data-cover="hidden"] {
+    display: none;
+}
+
+.cover {
+    position: absolute;
+    z-index: 100;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #777;
+    opacity: .7;
+}
+
+/* Description game */
+
+.redCircle,
+.greenCircle,
+.blueCircle,
+.cyanCircle {
+    display:inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.redCircle {
+    background-color: #ff0000;
+}
+
+.greenCircle {
+    background-color: #00ff00;
+}
+
+.blueCircle {
+    background-color: #0000ff;
+}
+
+.cyanCircle {
+    background-color: #00ffff;
+}
+
+.description {
+    display: flex;
+    align-content: center;
+}

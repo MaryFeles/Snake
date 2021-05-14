@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Змейка</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="game-header">            
+            <div class="btn-wrapper">
+                <button class="btn playgame-btn playgame-btn--start" data-game-state="start">Старт</button>
+                <button class="btn playgame-btn playgame-btn--pause" data-game-state="pause" disabled="true">Пауза</button>
+            </div>            
+
+            <div class="score-wrapper">
+                <span class="label score-label">СЧЕТ:</span>
+                <div class="score">0</div>
+            </div>
+
+            <div class="time-wrapper">
+                <span class="label time-label">ВРЕМЯ:</span>
+                <div class="timer">00:00</div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas" width="480" height="320"></canvas>
+    </div>
+
+    <div class="cover" data-cover="hidden"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/playState.js"></script>
+    <script src="js/Modal.js"></script>
+    <script src="js/Food.js"></script>
+    <script src="js/Snake.js"></script>
+    <script src="js/Game.js"></script>
+
+</body>
+
+</html>
